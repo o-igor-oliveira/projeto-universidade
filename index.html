@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header -->
+
     <section class="header">
         <nav>
             <a href="index.html"><img src="imagens/logo.png" alt="Logo Eduford"></a>
-            <div class="nav-links">
-                <span class="material-icons menu" id="iconeM">close</span>
+            <div class="nav-links" id="inav-links">
+                <span class="material-icons menu" id="iconeM" onclick="hideMenu()">close</span>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -21,7 +24,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <span class="material-icons menu" id="iconeX">menu</span>
+            <span class="material-icons menu" id="iconeX" onclick="showMenu()">menu</span>
         </nav>
 
         <div class="text-box">
@@ -30,5 +33,102 @@
             <a href="" class="hero-btn">Visit Us To Know More</a>
         </div>
     </section>
+
+    <!-- Course -->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A deleniti numquam odio nulla quia distinctio ducimus sunt aut est, cumque accusantium quae sapiente eligendi. Maxime, assumenda.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A deleniti numquam odio nulla quia distinctio ducimus sunt aut est, cumque accusantium quae sapiente eligendi. Maxime, assumenda.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A deleniti numquam odio nulla quia distinctio ducimus sunt aut est, cumque accusantium quae sapiente eligendi. Maxime, assumenda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus -->
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+        <div class="row">
+            <div class="campus-col">
+                <img src="imagens/london.png" alt="Um prédio em Londres">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="imagens/newyork.png" alt="Um prédio em Nova Iorque">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="imagens/washington.png" alt="Um prédio em Washington">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="imagens/library.png" alt="Uma mulher em uma biblioteca">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit consectetur nisi!</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="imagens/basketball.png" alt="Mulheres jogando basquete">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit consectetur nisi!</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="imagens/cafeteria.png" alt="Pessoas em uma cafeteria">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit consectetur nisi!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <!-- JavaScript for Toggle Menu -->
+
+    <script>
+
+        var navLinks = document.getElementById('inav-links');
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
 </body>
 </html>
