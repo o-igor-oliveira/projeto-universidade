@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+
+    <!-- link do google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- link para inserir a estrela vazia com fill 0 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- link gerado para os ícones do font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- basta pesquisar por font awesome cdn, copiar o link, e depois font awesome icons, cola o link lá embaixo -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo Eduford"></a>
+            <div class="nav-links" id="inav-links">
+                <span class="material-icons" id="iconeM" onclick="hideMenu()">close</span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="material-icons" id="iconeX" onclick="showMenu()">menu</span>
+        </nav>
+
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-- Blog Page Content -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="imagens/certificate.jpg" alt="Mulher segurando um diploma">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum iure sunt, incidunt architecto consectetur magnam quaerat recusandae aliquam accusamus vitae illum laborum accusantium ratione fuga debitis ipsum odit saepe culpa! Sunt inventore expedita excepturi consequatur. Maxime, deserunt. Porro consequatur unde odit quos quisquam! Et, iure.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ad quisquam tempore quasi facere sequi consectetur, laborum suscipit numquam eligendi, ratione iusto dolorum nisi molestias quaerat qui aspernatur. Voluptate, illum? Dolore suscipit animi corrupti aut molestias. Quia magni consequatur impedit placeat voluptatem nemo laudantium sapiente voluptatum pariatur facilis sint veritatis magnam perferendis corporis laboriosam deleniti, commodi aspernatur a. Quis consequuntur explicabo asperiores ratione quaerat reprehenderit ab nihil molestias minus animi quisquam, numquam ad adipisci qui magnam nobis cum amet earum totam. Exercitationem atque maiores architecto nam vitae voluptatibus molestias iusto, dicta magni explicabo culpa assumenda odio nemo velit temporibus placeat fugit. Architecto, necessitatibus quo. Dolorem fugit vero placeat dolorum quasi eius suscipit, quia eum. Cum delectus autem quidem excepturi repellendus.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad totam odit ex nisi, necessitatibus, accusantium libero corrupti quibusdam repellat non, hic incidunt? Nihil placeat harum, quis sint quidem natus quod, rerum, aut alias perferendis saepe doloribus maxime illo dolores cum reiciendis maiores hic aspernatur temporibus? Soluta voluptatibus ad at, neque non nisi perspiciatis explicabo quam dicta nobis temporibus sit voluptatum, libero et, similique fugit quos nulla. Voluptates iusto et deserunt, explicabo eligendi assumenda nostrum ea nobis eos ipsum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nemo error dolorem, quisquam iste voluptate eum obcaecati maxime aliquid nulla rerum porro deserunt quos animi consectetur odit sit excepturi placeat. Doloribus fuga unde laborum quam alias. Voluptatem, vitae quidem? Natus cupiditate hic ullam, nobis amet quod obcaecati?</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+    
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+                <!-- Em telas superiores à 700px, a seção de comentários aparece como último elemento da tela, porém, em telas menores, a seção do Post Categories é que aparece por último -->
+
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem adipisci sunt, nam fugiat <br> sit, quibusdam maiores cum voluptas, animi nulla numquam aliquam!</p>
+
+        <div class="icons">
+            <!-- <img src="imagens/icone-facebook.png" alt="">
+            <img src="imagens/icone-twitter.png" alt="">
+            <img src="imagens/icone-instagram.png" alt="">
+            <img src="imagens/icone-linkedin.png" alt=""> -->
+            <!-- foram usados ícones ao invés das imagens -->
+
+            <i class="fa-brands fa-facebook-f icone"></i>
+            <i class="fa-brands fa-twitter icone"></i>
+            <i class="fa-brands fa-instagram icone"></i>
+            <i class="fa-brands fa-linkedin-in icone"></i>
+        </div>
+
+        <p>Made with <i class="fa-solid fa-heart coracao"></i> by Easy Tutorials</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+
+    <script>
+
+        var navLinks = document.getElementById('inav-links');
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+</body>
+</html>
