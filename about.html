@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+
+    <!-- link do google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- link para inserir a estrela vazia com fill 0 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- link gerado para os ícones do font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- basta pesquisar por font awesome cdn, copiar o link, e depois font awesome icons, cola o link lá embaixo -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo Eduford"></a>
+            <div class="nav-links" id="inav-links">
+                <span class="material-icons" id="iconeM" onclick="hideMenu()">close</span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="material-icons" id="iconeX" onclick="showMenu()">menu</span>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About Us content -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt error dolores iusto? Modi consequatur sequi ipsam ipsa voluptate, omnis laudantium nesciunt animi praesentium dolor maxime delectus excepturi sint. Neque officiis possimus incidunt ipsa! Expedita iste architecto quas placeat nisi qui magni repudiandae debitis cum est corporis odio, atque, ratione odit tenetur at mollitia.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                <!-- o hero-btn já possui css definido, porém, ele possui letras brancas e fundo transparente, ficando invisível no about us, daí a necessidade para classe red-btn para um css adicional-->
+            </div>
+
+            <div class="about-col">
+                <img src="imagens/about.jpg" alt="Cinco pessoas em uma mesa de reunião">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem adipisci sunt, nam fugiat <br> sit, quibusdam maiores cum voluptas, animi nulla numquam aliquam!</p>
+
+        <div class="icons">
+            <!-- <img src="imagens/icone-facebook.png" alt="">
+            <img src="imagens/icone-twitter.png" alt="">
+            <img src="imagens/icone-instagram.png" alt="">
+            <img src="imagens/icone-linkedin.png" alt=""> -->
+            <!-- foram usados ícones ao invés das imagens -->
+
+            <i class="fa-brands fa-facebook-f icone"></i>
+            <i class="fa-brands fa-twitter icone"></i>
+            <i class="fa-brands fa-instagram icone"></i>
+            <i class="fa-brands fa-linkedin-in icone"></i>
+        </div>
+
+        <p>Made with <i class="fa-solid fa-heart coracao"></i> by Easy Tutorials</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+
+    <script>
+
+        var navLinks = document.getElementById('inav-links');
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+</body>
+</html>
